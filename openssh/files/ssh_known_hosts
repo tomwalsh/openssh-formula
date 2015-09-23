@@ -30,7 +30,7 @@
       {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
-  {%- for line in keys.split('\n') -%}
+  {%- for file, line in keys -%}
   {%- if line -%}
 {{ ','.join(names) }} {{ line }}
 {% endif -%}
