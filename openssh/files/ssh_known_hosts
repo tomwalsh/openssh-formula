@@ -30,7 +30,7 @@
       {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
-  {%- for file, line in keys -%}
+  {%- for file, line in keys|dictsort -%}
   {%- if line -%}
 {{ ','.join(names) }} {{ line }}
 {% endif -%}
